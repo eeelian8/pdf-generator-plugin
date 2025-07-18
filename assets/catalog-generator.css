@@ -1,0 +1,194 @@
+/* Estilos para el plugin Generador de Catálogos PDF */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.catalog-generator-container .form-table td {
+    padding: 10px 0;
+}
+
+.catalog-generator-container select,
+.catalog-generator-container input[type="text"],
+.catalog-generator-container input[type="number"] {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.catalog-generator-container select:focus,
+.catalog-generator-container input[type="text"]:focus,
+.catalog-generator-container input[type="number"]:focus {
+    outline: none;
+    border-color: #007cba;
+    box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.2);
+}
+
+.catalog-generator-container select[multiple] {
+    min-height: 120px;
+    background: #fafafa;
+}
+
+.catalog-generator-container select[multiple] option {
+    padding: 5px 10px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.catalog-generator-container select[multiple] option:hover {
+    background-color: #e6f3ff;
+}
+
+.catalog-generator-container .description {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.catalog-generator-container .button-primary {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 500;
+    background-color: #007cba;
+    border-color: #007cba;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.catalog-generator-container .button-primary:hover {
+    background-color: #005a87;
+    border-color: #005a87;
+}
+
+.catalog-generator-container .button-primary:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+
+#loading {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #666;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+#catalog-result {
+    margin-top: 20px;
+}
+
+#catalog-result .notice {
+    font-family: 'Roboto', Arial, sans-serif;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+#catalog-result .notice-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+#catalog-result .notice-error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+#catalog-result .notice p {
+    margin: 5px 0;
+}
+
+#catalog-result .notice a.button {
+    font-family: 'Roboto', Arial, sans-serif;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Estilos para campos de precio */
+.catalog-generator-container input[name="min_price"],
+.catalog-generator-container input[name="max_price"] {
+    width: 120px;
+    margin: 0 5px;
+}
+
+.catalog-generator-container input[name="min_stock"],
+.catalog-generator-container input[name="sku"] {
+    width: 200px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#catalog-result .notice {
+    animation: fadeIn 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .catalog-generator-container {
+        margin: 10px;
+    }
+    
+    .catalog-generator-container .form-table {
+        padding: 15px;
+    }
+    
+    .catalog-generator-container .form-table th,
+    .catalog-generator-container .form-table td {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+    
+    .catalog-generator-container .form-table th {
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    
+    .catalog-generator-container select,
+    .catalog-generator-container input[type="text"],
+    .catalog-generator-container input[type="number"] {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}-container {
+    font-family: 'Roboto', Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.catalog-generator-container h1 {
+    font-family: inherit;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.catalog-generator-container .form-table {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.catalog-generator-container .form-table th {
+    font-family: inherit;
+    font-weight: 600;
+    color: #555;
+    width: 150px;
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+.catalog-generator
