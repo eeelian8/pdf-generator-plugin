@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    // Cargar subcategorías cuando se seleccionen categorías // Comment by @eeelian8
+    // Cargar subcategorías cuando se seleccionen categorías // Comment by @eeelian8 :)
     $('#categories').on('change', function() {
         var selectedCategories = $(this).val();
         
